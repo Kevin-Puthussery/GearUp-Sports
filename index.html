@@ -38,33 +38,39 @@
 
   <!--navbar-->
   <nav class="navbar navbar-expand-lg bg-black">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="container-fluid">
       <!-- Logo -->
       <a class="navbar-brand" href="#">
         <img src="./media/logo_correct.png" alt="Logo" width="200px" height="170px" style="margin-top:2px;">
       </a>
 
-      <!-- Navigation Links -->
-      <div class="mx-auto">
-        <ul class="navbar-nav flex-row">
-          <li class="nav-item px-4">
-            <a class="nav-link fw-bold text-white" href="#">Home</a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link fw-bold text-white" href="#category">Shop<i class="fa-solid fa-cart-shopping"></i></a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link fw-bold text-white" href="#">Products</a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link fw-bold text-white" href="#">Blog</a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link fw-bold text-white" href="#">Pages</a>
-          </li>
-        </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+
+        <!-- Navigation Links -->
+        <div class="mx-auto">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item px-4">
+              <a class="nav-link fw-bold text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link fw-bold text-white" href="#category">Shop<i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link fw-bold text-white" href="#feature">Featured Products</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link fw-bold text-white" href="#">Blogs</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link fw-bold text-white" href="#"></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
   </nav>
 
   <!--banner carosel-->
@@ -203,6 +209,90 @@
   </div>
 
 
+  <!--featured product-->
+
+  <div class="container-fluid pt-4 mt-4" id="feature">
+    <div class="text-center mb-4">
+      <h5 class="text-uppercase fw-bold" style="color: var(--x);">Our Product</h5>
+      <h1 class="text-center mb-5">Featured Product</h1>
+    </div>
+
+    <div class="container my-5 pb-5" id="Footwears">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+        <!-- Product Card -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./media/basketball/s2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title1">Adidas Flexpro</h5>
+              <p class="card-text text-muted"><s>₹2199</s> is now at <span class="text-success">₹1999 !!!</span> !!!</p>
+              <p class="card-text">
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now<i
+                  class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="./media/basketball/b1.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title1">Milton Perfect Shot</h5>
+              <p class="card-text text-muted"><s>₹1199</s> is now at <span class="text-success">₹999 !!!</span></p>
+              <p class="card-text">
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now<i
+                  class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="./media/cricket/bat1.png" class="card-img-top" alt="" height="300px">
+            <div class="card-body">
+              <h5 class="card-title1">MRF Genius</h5>
+              <p class="card-text text-muted"><s>₹2899</s> is now at <span class="text-success">₹2800 !!!</span></p>
+              <p class="card-text">
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="./media/gym/whey1.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title1">Premium Whey Protein 1Kg</h5>
+              <p class="card-text text-muted"><s>₹2899</s> is now at <span class="text-success">₹1800 !!!</span></p>
+              <p class="card-text">
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<button id="scrollToTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">↑
+</button>
 
   <!--footer-->
 
@@ -227,7 +317,7 @@
         </div>
 
 
-       
+
         <div class="col-12 col-md-4">
           <h5>Subscribe to Our Free Weekly Updates</h5>
           <form class="d-flex flex-column flex-sm-row gap-2 mb-3">
@@ -257,5 +347,21 @@
 
 
 </body>
+
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.classList.remove("d-none");
+    } else {
+      scrollToTopBtn.classList.add("d-none");
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 
 </html>

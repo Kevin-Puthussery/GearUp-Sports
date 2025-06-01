@@ -37,25 +37,28 @@
 
 <body>
 
-   <!--navbar-->
+      <!--navbar-->
   <nav class="navbar navbar-expand-lg bg-black">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="container-fluid">
       <!-- Logo -->
       <a class="navbar-brand" href="./index.html">
         <img src="./media/logo_correct.png" alt="Logo" width="200px" height="170px" style="margin-top:2px;">
       </a>
-    </div>
 
-    <!-- Navigation Links -->
-    <div class="container-fluid justify-content-center">
-      <ul class="navbar-nav d-flex flex-row gap-4 align-items-center">
-        <li class="nav-item">
-          <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModal3" href="#">My Cart<i class="fa-solid fa-cart-shopping"></i></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Products
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+
+        <!-- Navigation Links -->
+        <div class="mx-auto">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item px-4 py-2 text-center">
+              <a class="nav-link fw-bold text-white" data-bs-toggle="modal" data-bs-target="#exampleModal3"href="#category">My Cart<i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          <li class="nav-item dropdown py-2">
+          <a class="nav-link dropdown-toggle text-white text-center" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
             <li><a class="dropdown-item" href="./cricket.html">Cricket</a></li>
@@ -64,14 +67,14 @@
             <li><a class="dropdown-item" href="./gym.html">Gym & Fitness</a></li>
             <li><a class="dropdown-item" href="./batminton.html">Batminton</a></li>
             <li><a class="dropdown-item" href="./basketball.html">Basketball</a></li>
-
           </ul>
+        </li>            
+            <li class="nav-item px-4 py-2">
+          <a class="nav-link text-white text-center" href="./index.html"><i class="fa-solid fa-house"></i></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white border rounded-5" href="./index.html"><i class="fa-solid fa-house"></i></a>
-        </li>
-      </ul>
-    </div>
+          </ul>
+        </div>
+      </div>
   </nav>
 
 
@@ -383,6 +386,10 @@
     </div>
   </div>
 
+<button id="scrollToTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">↑
+</button>
+
+
   <!--footer-->
 
   <footer class="bg-dark text-white py-4">
@@ -489,5 +496,19 @@
   </div>
 
 </body>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.classList.remove("d-none");
+    } else {
+      scrollToTopBtn.classList.add("d-none");
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </html>
