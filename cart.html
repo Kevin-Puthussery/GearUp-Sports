@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GearUp :: My Cart</title>
+
+    <!--bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!--javascript CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <!--Favicons-->
+    <link rel="icon" href="https://freepngimg.com/download/sports_equipment/22346-3-sport-transparent-background.png"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&family=Tagesschrift&display=swap"
+        rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Favicon-->
+    <link rel="icon" href="./media/logo.png">
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+        .card-title {
+            font-weight: bold;
+        }
+
+        .form-label {
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./media/logo_correct.png" alt="Logo" width="250px" height="180px" style="margin-top:2px;">
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav d-flex flex-row gap-4 align-items-center">
+
+
+                <li class="nav-item py-4">
+                    <a class="nav-link text-white border rounded-5" href="./index.html"><i
+                            class="fa-solid fa-house"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Main Section -->
+    <div class="container py-5">
+        <h1 class="text-center">Cart Checkout</h1>
+        <div class="row g-5 mt-4">
+
+            <!-- Cart Summary -->
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">My Cart</span>
+                    <span class="badge bg-primary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Football Shoes</h6>
+                            <small class="text-muted">Size 10</small>
+                        </div>
+                        <span class="text-muted">₹1250</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Cricket Bat</h6>
+                            <small class="text-muted">Grade A English Willow</small>
+                        </div>
+                        <span class="text-muted">₹3120</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Basketball</h6>
+                            <small class="text-muted">Standard size</small>
+                        </div>
+                        <span class="text-muted">₹2330</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (INR)</span>
+                        <strong>₹7200</strong>
+                    </li>
+                </ul>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code" />
+                        <button type="submit" class="btn btn-secondary">Apply</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Billing Form -->
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Billing Address</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" required />
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" required />
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required />
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Choose...</option>
+                                <option>India</option>
+                                <option>United States</option>
+                                <option>United Kingdom</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required>
+                                <option value="">Choose...</option>
+                                <option>Kerala</option>
+                                <option>Maharashtra</option>
+                                <option>California</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="zip" required />
+                        </div>
+                    </div>
+                    <hr class="my-4" />
+<h4 class="mb-3">Payment Method</h4>
+
+<div class="my-3">
+  <div class="form-check">
+    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+    <label class="form-check-label" for="credit">Credit card</label>
+  </div>
+  <div class="form-check">
+    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+    <label class="form-check-label" for="debit">Debit card</label>
+  </div>
+  <div class="form-check">
+    <input id="upi" name="paymentMethod" type="radio" class="form-check-input" required>
+    <label class="form-check-label" for="upi">UPI</label>
+  </div>
+  <div class="form-check">
+    <input id="cod" name="paymentMethod" type="radio" class="form-check-input" required>
+    <label class="form-check-label" for="cod">Cash on Delivery</label>
+  </div>
+</div>
+
+                    <hr class="my-4" />
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address" />
+                        <label class="form-check-label" for="same-address">Shipping address is the same as
+                            billing</label>
+                    </div>
+
+                    
+                    <hr class="my-4" />
+
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-start">
+                <!-- Logo & Address -->
+                <div class="col-12 col-md-4 mb-4">
+                    <img src="./media/logo_correct.png" alt="Logo" class="img-fluid mb-1" style="max-width: 150px;">
+                    <p><strong>130, Junction, Thottumkalpeedika,<br>Muvattupuzha, Kerala 686661</strong></p>
+                </div>
+
+                <!-- Services List -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h2>Services</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none footer-link">FAQs</a></li>
+                        <li><a href="#" class="text-white text-decoration-none footer-link">Order Tracking</a></li>
+                        <li><a href="#" class="text-white text-decoration-none footer-link">Return Product</a></li>
+                        <li><a href="#" class="text-white text-decoration-none footer-link">Customer Care</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Newsletter + Social Icons -->
+                <div class="col-12 col-md-4">
+                    <h5>Subscribe to Our Free Weekly Updates</h5>
+                    <form class="d-flex flex-column flex-sm-row gap-2 mb-3">
+                        <input type="email" class="form-control" placeholder="Email id">
+                        <button class="btn btn-warning" type="submit">Subscribe</button>
+                    </form>
+                    <div class="d-flex gap-5">
+                        <a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x text-primary"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x text-primary"></i></a>
+                    </div>
+                    <div class="row">
+                        <div class="container pt-2">
+                            <h5>Need Help ?</h5>
+                            <p style="font-size: 2rem;color: orangered;">
+                                0222-46756847
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">My Cart<i class="fa-solid fa-cart-plus"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>1 Item Added to Your Cart</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">View Cart</button>
+                    <button type="button" class="btn btn-danger">Remove Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Item Out of Stock <i
+                            class="fa-solid fa-circle-exclamation"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>We will notify you know once the item is back in stock</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Notify Me</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
