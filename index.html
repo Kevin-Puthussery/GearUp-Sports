@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gear Up Store</title>
+  <!--bootstrap CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!--javascript CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <!--Favicons-->
+  <link rel="icon" href="https://freepngimg.com/download/sports_equipment/22346-3-sport-transparent-background.png"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&family=Tagesschrift&display=swap"
+    rel="stylesheet">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="./style.css">
+  <!--Favicon-->
+  <link rel="icon" href="./media/logo.png">
+  <!--Fontawesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-black">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./media/logo_correct.png" alt="Logo" width="200px" height="170px" style="margin-top:2px;">
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="mx-auto">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item px-4">
+            <a class="nav-link fw-bold text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link fw-bold text-white" href="#category">Shop<i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link fw-bold text-white" href="#">Products</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link fw-bold text-white" href="#">Blog</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link fw-bold text-white" href="#">Pages</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--banner carosel-->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images5.alphacoders.com/109/1093585.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./media/ban2.png" class="d-block w-100 h-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./media/ban1.png" class="d-block w-100 h-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--Our category-->
+
+  <div class="container-fluid pt-4 mt-4" id="category">
+    <div class="text-center mb-4">
+      <h5 class="text-uppercase fw-bold" style="color: var(--x);">Our Category</h5>
+      <h1 class="text-center mb-5">Category By Sport</h1>
+    </div>
+
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://cdn.wallpapersafari.com/93/89/d2CLmo.jpg" class="card-img-top" alt="..."
+              style="width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">Cricket</h5>
+              <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the content.</p>-->
+            </div>
+            <div class="card-footer">
+              <a href="./cricket.html" class="btn btn-primary">Shop Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/8168oUI+XDL.jpg" class="card-img-top" alt="..."
+              style="width: 100%; height:310px ;">
+            <div class="card-body">
+              <h5 class="card-title">Football</h5>
+              <!--<p class="card-text">Another short description or feature you want to highlight on this card.</p>-->
+            </div>
+            <div class="card-footer">
+              <a href="./football.html" class="btn btn-primary">Shop Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://4kwallpapers.com/images/wallpapers/basketball-do-it-now-3d-background-2560x1440-3746.jpg"
+              class="card-img-top" alt="..." style="width: 100%; height:310px ;">
+            <div class="card-body">
+              <h5 class="card-title">Basketball</h5>
+              <!--<p class="card-text">You can customize cards with different styles, icons, and layouts.</p>-->
+            </div>
+            <div class="card-footer">
+              <a href="./basketball.html" class="btn btn-primary">Shop Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://wallpapercave.com/wp/wp1852950.jpg" class="card-img-top" alt="..."
+              style="width: 100%; height:310px ;">
+            <div class="card-body">
+              <h5 class="card-title">Batminton</h5>
+              <!--<p class="card-text">You can customize cards with different styles, icons, and layouts.</p>-->
+            </div>
+            <div class="card-footer">
+              <a href="./batminton.html" class="btn btn-primary">Shop Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://wallpapercat.com/w/full/5/5/f/1138876-2500x1667-desktop-hd-field-hockey-wallpaper-image.jpg"
+              class="card-img-top" alt="..." style="width: 100%; height:310px ;">
+            <div class="card-body">
+              <h5 class="card-title">Hockey</h5>
+              <!--<p class="card-text">You can customize cards with different styles, icons, and layouts.</p>-->
+            </div>
+            <div class="card-footer">
+              <a href="./hockey.html" class="btn btn-primary">Shop Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/images6/GYM-Fitness-Wallpaper-HD.jpg"
+              class="card-img-top" alt="..." style="width: 100%; height:310px ;">
+            <div class="card-body">
+              <h5 class="card-title">Gym & Fitness</h5>
+              <!--<p class="card-text">You can customize cards with different styles, icons, and layouts.</p>-->
+            </div>
+            <div class="card-footer">
+              <a href="./gym.html" class="btn btn-primary">Shop Now<i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--footer-->
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-start">
+        <!-- Logo & Address -->
+        <div class="col-12 col-md-4 mb-4">
+          <img src="./media/logo_correct.png" alt="Logo" class="img-fluid mb-1" style="max-width: 150px;">
+          <p><strong>130, Junction, Thottumkalpeedika,<br>Muvattupuzha, Kerala 686661</strong></p>
+        </div>
+
+        <!-- Services List -->
+        <div class="col-12 col-md-4 mb-4">
+          <h2>Services</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none footer-link">FAQs</a></li>
+            <li><a href="#" class="text-white text-decoration-none footer-link">Order Tracking</a></li>
+            <li><a href="#" class="text-white text-decoration-none footer-link">Return Product</a></li>
+            <li><a href="#" class="text-white text-decoration-none footer-link">Customer Care</a></li>
+          </ul>
+        </div>
+
+
+       
+        <div class="col-12 col-md-4">
+          <h5>Subscribe to Our Free Weekly Updates</h5>
+          <form class="d-flex flex-column flex-sm-row gap-2 mb-3">
+            <input type="email" class="form-control" placeholder="Email id">
+            <button class="btn btn-warning" type="submit">Subscribe</button>
+          </form>
+          <div class="d-flex gap-5">
+            <a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x text-primary"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x text-primary"></i></a>
+          </div>
+          <div class="row">
+            <div class="container pt-2">
+              <h5>Need Help ?</h5>
+              <p style="font-size: 2rem;color: orangered;">
+                0222-46756847
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

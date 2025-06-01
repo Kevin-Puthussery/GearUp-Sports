@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GearUp :: Basketball</title>
+
+  <!--bootstrap CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!--javascript CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <!--Favicons-->
+  <link rel="icon" href="https://freepngimg.com/download/sports_equipment/22346-3-sport-transparent-background.png"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&family=Tagesschrift&display=swap"
+    rel="stylesheet">
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="./style.css">
+  <!--Favicon-->
+  <link rel="icon" href="./media/logo.png">
+  <!--Fontawesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-black">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./media/logo_correct.png" alt="Logo" width="200px" height="170px" style="margin-top:2px;">
+      </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav d-flex flex-row gap-4 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModal3"href="#">My Cart<i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="./cricket.html">Cricket</a></li>
+            <li><a class="dropdown-item" href="./football.html">Football</a></li>
+            <li><a class="dropdown-item" href="./hockey.html">Hockey</a></li>
+            <li><a class="dropdown-item" href="./gym.html">Gym & Fitness</a></li>
+            <li><a class="dropdown-item" href="./batminton.html">Batminton</a></li>
+            <li><a class="dropdown-item" href="./basketball.html">Basketball</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white border rounded-5" href="./index.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--shoping begins-->
+
+  <div class="container my-5">
+    <div class="text-center mb-4">
+      <h1 class="text-center fw-bold mb-5">Basketball Gears</h1>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Category Card -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="#Footwears" style="text-decoration: none;">
+          <div class="d-flex align-items-center p-3 rounded-4" style="background-color: #e7edf7;">
+            <div class="flex-grow-1">
+              <h5 class="fw-bold mb-1">Footwears</h5>
+              <p class="text-muted mb-0">3 Products</p>
+            </div>
+            <img src="./media/basketball/s2.png" alt="Footwear" class="img-fluid" style="max-height: 80px;">
+          </div>
+        </a>
+      </div>
+
+      <!-- Repeat for other categories -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="#Bats" style="text-decoration: none;">
+          <div class="d-flex align-items-center p-3 rounded-4" style="background-color: #fbeaea;">
+            <div class="flex-grow-1">
+              <h5 class="fw-bold mb-1">Balls</h5>
+              <p class="text-muted mb-0">2 Product</p>
+            </div>
+            <img src="./media/basketball/b1.png" alt="Electronics" class="img-fluid" style="max-height: 80px;">
+          </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <a href="#T-shirts" style="text-decoration: none;">
+          <div class="d-flex align-items-center p-3 rounded-4" style="background-color: #eff7e7;">
+            <div class="flex-grow-1">
+              <h5 class="fw-bold mb-1">T-shirts & Protection</h5>
+              <p class="text-muted mb-0">1 Products</p>
+            </div>
+            <img src="./media/basketball/t1.png" alt="Equipment" class="img-fluid" style="max-height: 80px;">
+          </div>
+        </a>
+      </div>
+
+      <!-- Add more cards as needed with different background colors -->
+
+    </div>
+  </div>
+
+  <!--catalogue1-->
+
+  <div class="container my-5" id="Footwears">
+    <h2 class="text-center mb-4">Footwears</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+      <!-- Product Card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/basketball/s2.png"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title1">Adidas Flexpro</h5>
+            <p class="card-text text-muted">₹2199</p>
+            <p class="card-text">
+              High resistant PVC upper and Outsole Highly durable quality Comfortable Eva sock liner Toe and heel
+              protection Contemporary design Ventilation holes.<br>
+              *This product is available only in provided image color sizes UK: 7,8,9
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary w-100"data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart<i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/basketball/s3.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title1">Nike Mercurial</h5>
+            <p class="card-text text-muted">₹3999</p>
+            <p class="card-text">
+              High resistant PVC upper and Outsole Highly durable quality Comfortable Eva sock liner Toe and heel
+              protection Contemporary design Ventilation holes.<br>
+              *This product is available only in provided image color sizes UK: 7,8,9
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary w-100"data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart<i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/basketball/s4.png" class="card-img-top" alt="" style="height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title1">Nivia Pro Max</h5>
+            <p class="card-text text-muted">₹1799</p>
+            <p class="card-text">
+              High resistant PVC upper and Outsole Highly durable quality Comfortable Eva sock liner Toe and heel
+              protection Contemporary design Ventilation holes.<br>
+              *This product is available only in provided image color sizes UK: 7,8,9
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary w-100"data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart<i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Repeat as needed for more products -->
+
+    </div>
+  </div>
+
+  <!--catalogue2-->
+
+  <div class="container my-5" id="Bats">
+    <h2 class="text-center mb-4">Balls</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+      <!-- Product Card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/basketball/b1.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title1">Milton Perfect Shot</h5>
+            <p class="card-text text-muted">₹2899</p>
+            <p class="card-text">
+              Suitable for hard surface, wooden flooring and indoor synthetic surface
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary w-100"data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart<i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/basketball/b2.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title1">GM English Willow</h5>
+            <p class="card-text text-muted">₹2999</p>
+            <p class="card-text">
+              Suitable for hard surface, wooden flooring and indoor synthetic surface </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary w-100"data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart<i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Repeat as needed for more products -->
+
+    </div>
+  </div>
+
+  <!--catalogue3-->
+
+  <div class="container my-5" id="T-shirts">
+    <h2 class="text-center mb-4">T-shirts</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+      <!-- Product Card -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/basketball/t1.png"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title1">Basic T-shirt & Shorts</h5>
+            <p class="card-text text-muted">₹1899</p>
+            <p class="card-text">
+              *This product is available only in provided image color sizes S,M,L,XL,XXL
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary w-100"data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart<i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/basketball/t1.png"
+            class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title1">Basic T-shirt & Shorts</h5>
+            <p class="card-text text-muted">₹1899</p>
+            <p class="card-text">
+              *This product is available only in provided image color sizes S,M,L,XL,XXL
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary w-100"data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart<i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Repeat as needed for more products -->
+
+    </div>
+  </div>
+
+ <!--footer-->
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-start">
+        <!-- Logo & Address -->
+        <div class="col-12 col-md-4 mb-4">
+          <img src="./media/logo_correct.png" alt="Logo" class="img-fluid mb-1" style="max-width: 150px;">
+          <p><strong>130, Junction, Thottumkalpeedika,<br>Muvattupuzha, Kerala 686661</strong></p>
+        </div>
+
+        <!-- Services List -->
+        <div class="col-12 col-md-4 mb-4">
+          <h2>Services</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none footer-link">FAQs</a></li>
+            <li><a href="#" class="text-white text-decoration-none footer-link">Order Tracking</a></li>
+            <li><a href="#" class="text-white text-decoration-none footer-link">Return Product</a></li>
+            <li><a href="#" class="text-white text-decoration-none footer-link">Customer Care</a></li>
+          </ul>
+        </div>
+
+
+        <!-- Newsletter + Social Icons -->
+        <div class="col-12 col-md-4">
+          <h5>Subscribe to Our Free Weekly Updates</h5>
+          <form class="d-flex flex-column flex-sm-row gap-2 mb-3">
+            <input type="email" class="form-control" placeholder="Email id">
+            <button class="btn btn-warning" type="submit">Subscribe</button>
+          </form>
+          <div class="d-flex gap-5">
+            <a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x text-primary"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x text-primary"></i></a>
+          </div>
+          <div class="row">
+            <div class="container pt-2">
+              <h5>Need Help ?</h5>
+              <p style="font-size: 2rem;color: orangered;">
+                0222-46756847
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">My Cart<i class="fa-solid fa-cart-plus"></i></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>1 Item Added to Your Cart</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">View Cart</button>
+          <button type="button" class="btn btn-danger">Remove Item</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Item Out of Stock <i
+              class="fa-solid fa-circle-exclamation"></i></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>We will notify you know once the item is back in stock</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Notify Me</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Please Sign-In to View Cart <i
+              class="fa-solid fa-circle-exclamation"></i></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Already an User Please Sign-In else Register via Sign-Up</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Sign-In</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='signup.html'">Sign-Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

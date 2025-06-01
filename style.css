@@ -1,0 +1,65 @@
+*{
+font-family: "Play", system-ui;  
+font-weight: 800;
+font-style: normal;
+
+}
+
+:root {
+    --x:  rgb(233, 88, 35);
+}
+
+/*navbar*/
+
+.nav-item{
+  font-size: 1.5rem;
+  margin-top: -20px;
+  
+}
+.nav-link:hover {
+  color: var(--x) !important; /* change text color on hover */
+}
+
+.navbar-brand{
+  height: 150px;
+  width: 100px;
+  margin-top: -20px;
+}
+
+/*carosel banner*/
+
+.carousel-inner{
+height: 80vh;
+}
+
+/*category*/
+
+.card-title{
+  font-size: 3rem;
+}
+
+#category{
+/*  background-image: url("https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhZGl1bXxlbnwwfHwwfHx8MA%3D%3D");
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 30px 30px var(--x);
+  transform: translateY(-5px);
+  transition: all 0.4s ease;
+}
+
+/*product cards*/
+
+.card-title1{
+font-size:30px;
+}
+
+/*footer*/
+
+.footer-link:hover{
+  color: var(--x);
+}
